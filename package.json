@@ -1,5 +1,5 @@
 {
-  "name": "nxmap",
+  "name": "chb-nx-map",
   "version": "1.0.0",
   "description": "NX Typscript library for maps and address lookup",
   "main": "dist/index.js",
@@ -7,10 +7,15 @@
   "files": [
     "/dist"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@types/googlemaps": "^3.43.3"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeScriptVersion": "3.4",
+    "types": "index.d.ts",
+    "version": "1.0.0"
   },
   "keywords": [
     "123456"
