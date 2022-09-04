@@ -1,7 +1,7 @@
 {
   "name": "chb-nx-map",
-  "version": "1.0.0",
-  "description": "NX Typscript library for maps and address lookup",
+  "version": "1.0.193",
+  "description": "NX Typscript library for address lookup using Google API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -12,10 +12,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Working...\" && exit 1",
     "typeScriptVersion": "3.4",
     "types": "index.d.ts",
-    "version": "1.0.0"
+    "version": "1.0.14"
   },
   "keywords": [
     "123456"
