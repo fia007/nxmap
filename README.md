@@ -5,17 +5,12 @@ Run following npm command to install chb-na-map package to your angular project.
 
 npm install --save chb-nx-map
 
-
-To use NXMap in your angular projects, you'll need to make following entries.
-
 # Step 2.
-
 In html, add follwoing script in to the header section
 
 <script src="https://maps.googleapis.com/maps/api/js?key=[YOUR_GOOGLE_API_KEY]&libraries=places&channel=GMPSB_addressselection_v1_cABC"></script>
 
 # Step 3.
-
 Add following declaration to index.d.ts file
 
 declare module 'googlemaps';
