@@ -25,9 +25,10 @@ declare module 'googlemaps';
 
 
 # Step 4.
-Import googlemaps NXMap in your angular component.
+Import googlemaps and NXMap in your angular component.
 
 import {} from 'googlemaps';
+
 import { NXMap } from 'chb-nx-map';
 
 ![image](https://user-images.githubusercontent.com/112627631/188445773-0dd7a8f0-3517-4be2-9985-139b8795baef.png)
