@@ -23,7 +23,7 @@ import {} from 'googlemaps';
 import { NXMap } from 'chb-nx-map';
 
 # Step 5.
-Initialize NXMap and Address Lookup as shown in following screenshot.
+Initialize NXMap and Address Lookup as shown in following code snippet.
 
 ![image](https://user-images.githubusercontent.com/112627631/188441120-5d2ffbc6-4453-474a-ab0f-399c71a08c2c.png)
 
