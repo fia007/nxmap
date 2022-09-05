@@ -32,5 +32,6 @@ Initialize NXMap and Address Lookup as shown in following screenshot.
 
 ![image](https://user-images.githubusercontent.com/112627631/188441120-5d2ffbc6-4453-474a-ab0f-399c71a08c2c.png)
 
-##See code sample in the example folder.
+# See code sample in the example/nx-map-example directory.
+![image](https://user-images.githubusercontent.com/112627631/188441754-426fb433-ced0-4561-9ceb-4ffab6a81ff9.png)
 
