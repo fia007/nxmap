@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NXMapProvider = void 0;
 class NXMapProvider {
-    initilizeMap() { }
+    initilizeMap(mapContainer, zoom, latlang, mapTypeID) { }
     initilizeAddress(addressInput, mapContainer, autoCompleteCallback) { }
 }
 exports.NXMapProvider = NXMapProvider;

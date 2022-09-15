@@ -18,7 +18,15 @@ export class NXMapGoogle extends NXMapProvider
     constructor() { super(); }
 
     //Map functionality needs to be written
-    public initilizeMap():void { }
+    public initilizeMap(mapContainer, zoom, latlang, mapTypeID): any { 
+        let gMap = new google.maps.Map(mapContainer, {
+          zoom: zoom,
+          center: latlang,
+          mapTypeId: mapTypeID
+        });
+
+        return gMap;
+    }
 
     public initilizeAddress(addressInput, mapContainer, autoCompleteCallback):void
     {

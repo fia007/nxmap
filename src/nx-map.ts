@@ -14,9 +14,9 @@ export class NXMap
         this._mapProvider = new NXMapGoogle();
     }
 
-    initilizeMap():void
+    initilizeMap(mapContainer, zoom, latlang, mapTypeID): any
     {
-        this._mapProvider.initilizeMap();
+        return this._mapProvider.initilizeMap(mapContainer, zoom, latlang, mapTypeID);
     }
 
     //initilizeAddress(addressInput, mapContainer: HTMLDivElement = null, autoCompleteCallback):void

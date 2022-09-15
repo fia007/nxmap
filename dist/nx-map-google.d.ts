@@ -68,7 +68,7 @@ export declare class NXMapGoogle extends NXMapProvider {
         };
     };
     constructor();
-    initilizeMap(): void;
+    initilizeMap(mapContainer: any, zoom: any, latlang: any, mapTypeID: any): any;
     initilizeAddress(addressInput: any, mapContainer: any, autoCompleteCallback: any): void;
     private static renderAddress;
 }

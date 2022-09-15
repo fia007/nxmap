@@ -6,7 +6,14 @@ const nx_map_provider_1 = require("./nx-map-provider");
 class NXMapGoogle extends nx_map_provider_1.NXMapProvider {
     constructor() { super(); }
     //Map functionality needs to be written
-    initilizeMap() { }
+    initilizeMap(mapContainer, zoom, latlang, mapTypeID) {
+        let gMap = new google.maps.Map(mapContainer, {
+            zoom: zoom,
+            center: latlang,
+            mapTypeId: mapTypeID
+        });
+        return gMap;
+    }
     initilizeAddress(addressInput, mapContainer, autoCompleteCallback) {
         const autocomplete = new google.maps.places.Autocomplete(addressInput, {
             fields: ["address_components", "geometry", "name"],

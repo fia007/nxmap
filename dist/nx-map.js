@@ -12,8 +12,8 @@ class NXMap {
         this._mapProvider = null;
         this._mapProvider = new nx_map_google_1.NXMapGoogle();
     }
-    initilizeMap() {
-        this._mapProvider.initilizeMap();
+    initilizeMap(mapContainer, zoom, latlang, mapTypeID) {
+        return this._mapProvider.initilizeMap(mapContainer, zoom, latlang, mapTypeID);
     }
     //initilizeAddress(addressInput, mapContainer: HTMLDivElement = null, autoCompleteCallback):void
     initilizeAddress(addressInput, mapContainer, autoCompleteCallback) {
