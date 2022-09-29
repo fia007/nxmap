@@ -118,8 +118,8 @@ export class NXMapGoogle extends NXMapProvider
             }
             
             if(map != null) {
-                debugger;
-                alert('Lat: ' + place.geometry.location.lat() + ', Lng: '+ place.geometry.location.lng());
+                //debugger;
+                //alert('Lat: ' + place.geometry.location.lat() + ', Lng: '+ place.geometry.location.lng());
                 latitude = place.geometry.location.lat();
                 longtitude = place.geometry.location.lng();
                 NXMapGoogle.renderAddress(map, marker, place);
