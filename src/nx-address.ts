@@ -8,7 +8,9 @@ export class NXAddress
     public ProvinceCode: string;
     public CountryName: string; 
     public CountryCode: string;
-    public PostCode:string
+    public PostCode:string;
+    public Latitude: number;
+    public Longtitude: number;
     constructor(
         address1: string,
         address2: string,
@@ -18,7 +20,9 @@ export class NXAddress
         provinceCode: string,
         countryName: string, 
         countryCode: string,
-        postCode:string)
+        postCode:string, 
+        latitude: number, 
+        longtitude: number)
         {
             this.Address1 = address1;
             this.Address2 = address2;
@@ -30,5 +34,8 @@ export class NXAddress
             this.CountryCode = countryCode;
             this.CountryName = countryName;
             this.PostCode = postCode;
+
+            this.Latitude = latitude;
+            this.Longtitude = longtitude;
         }
 }

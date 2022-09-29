@@ -60,7 +60,7 @@ export class NXMapGoogle extends NXMapProvider
             }
             
             let country = '', countryCode = '', province = '', provinceCode = '', city = '', cityCode = '', address1 = '', address2 = '', postCode = '';
-            
+            let latitude: any = 0, longtitude: any = 0;
             for (var component in NXMapGoogle.componentForm) {
                  var formElment = NXMapGoogle.componentForm[component];
                 let ele: any = null;
@@ -116,12 +116,18 @@ export class NXMapGoogle extends NXMapProvider
                         break;
                 }
             }
-            let address = new NXAddress(address1, address2, city, cityCode, province, provinceCode, country, countryCode, postCode);
+            
+            if(map != null) {
+                debugger;
+                alert('Lat: ' + place.geometry.location.lat() + ', Lng: '+ place.geometry.location.lng());
+                latitude = place.geometry.location.lat();
+                longtitude = place.geometry.location.lng();
+                NXMapGoogle.renderAddress(map, marker, place);
+                
+            }
+            let address = new NXAddress(address1, address2, city, cityCode, province, provinceCode, country, countryCode, postCode, latitude, longtitude);
             
             autoCompleteCallback(address);
-            if(map != null) {
-                NXMapGoogle.renderAddress(map, marker, place);
-            }
         });
     }
 

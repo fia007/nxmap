@@ -1,6 +1,6 @@
 {
   "name": "chb-nx-map",
-  "version": "1.0.195",
+  "version": "1.0.199",
   "description": "NX Typscript library for address lookup using Google API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
