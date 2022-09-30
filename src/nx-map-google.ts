@@ -117,11 +117,12 @@ export class NXMapGoogle extends NXMapProvider
                 }
             }
             
+            latitude = place.geometry.location.lat();
+            longtitude = place.geometry.location.lng();
+
             if(map != null) {
                 //debugger;
                 //alert('Lat: ' + place.geometry.location.lat() + ', Lng: '+ place.geometry.location.lng());
-                latitude = place.geometry.location.lat();
-                longtitude = place.geometry.location.lng();
                 NXMapGoogle.renderAddress(map, marker, place);
                 
             }
